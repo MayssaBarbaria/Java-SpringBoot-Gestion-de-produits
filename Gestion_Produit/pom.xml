@@ -92,12 +92,17 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							  <source>1.8</source>
+                                                          <target>1.8</target>
 						</exclude>
 					</excludes>
 				</configuration>
